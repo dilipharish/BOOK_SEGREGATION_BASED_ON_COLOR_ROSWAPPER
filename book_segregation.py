@@ -37,8 +37,8 @@ ret = niryo_robot.vision_pick(workspace_name,
 obj_found, shape_ret, color_ret = ret
 
 if obj_found and color_ret in["RED","BLUE"]:
-    niryo_robot.place_from_pose(*place_pose1) #for red and blue plastic waste
+    niryo_robot.place_from_pose(*place_pose1) 
 else:
-    niryo_robot.place_from_pose(*place_pose2) #for green paper waste
+    niryo_robot.place_from_pose(*place_pose2)
 
 niryo_robot.move_pose(*observation_pose)
